@@ -1,4 +1,4 @@
-# Dries's Dotfiles
+# Oleg's Dotfiles
 
 This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
 
@@ -13,9 +13,10 @@ These instructions are for when you've already set up your dotfiles. If you want
 
 First, go through the checklist below to make sure you didn't forget anything before you wipe your hard drive.
 
+- Did you save ssh keys and ssh config?
 - Did you commit and push any changes/branches to your git repositories?
-- Did you remember to save all important documents from non-iCloud directories?
-- Did you save all of your work from apps which aren't synced through iCloud?
+- Did you remember to save all important documents from non-GoogleDrive directories?
+- Did you save all of your work from apps which aren't synced through Google Drive?
 - Did you remember to export important data from your local database?
 - Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
 
@@ -37,7 +38,7 @@ If you did all of the above you may now follow these install instructions to set
 3. Clone this repo to `~/.dotfiles` with:
 
     ```zsh
-    git clone git@github.com:driesvints/dotfiles.git ~/.dotfiles
+    git clone git@github.com:satoved/dotfiles.git ~/.dotfiles
     ```
 
 4. Run `~/.dotfiles/fresh.sh` to start the installation

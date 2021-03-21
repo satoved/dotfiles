@@ -46,6 +46,7 @@ cask 'telegram-desktop'
 cask 'the-unarchiver'
 cask 'tinkerwell'
 cask 'transmission'
+cask 'upwork'
 cask 'vlc'
 
 # Fonts

@@ -36,6 +36,7 @@ brew 'redis'
 # Apps
 cask 'alfred'
 cask 'brave-browser'
+cask 'dbngin'
 cask 'github'
 cask 'google-backup-and-sync'
 cask 'iterm2'

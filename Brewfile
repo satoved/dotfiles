@@ -9,6 +9,7 @@ brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'git'
+brew 'git-flow'
 brew 'svn'
 brew 'grep'
 brew 'mackup'

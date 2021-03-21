@@ -38,3 +38,13 @@ Thumbs.db
 .idea/
 .vscode
 .vagrant/
+
+# Vim swap files #
+######################
+.*.sw?
+
+# Node #
+node_modules
+npm-debug.log
+yarn-error.log
+######################

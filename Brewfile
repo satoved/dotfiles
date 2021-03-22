@@ -12,6 +12,7 @@ brew 'git'
 brew 'svn'
 brew 'grep'
 brew 'mackup'
+brew 'hub'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'zsh-autosuggestions'

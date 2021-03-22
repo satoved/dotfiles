@@ -40,10 +40,6 @@ ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/.global-gitignore $HOME/.global-gitignore
 git config --global core.excludesfile $HOME/.global-gitignore
 
-# Fix missing font characters (see https://github.com/robbyrussell/oh-my-zsh/issues/1906)
-cd ~/.oh-my-zsh/themes/
-git checkout d6a36b1 agnoster.zsh-theme
-
 # Activate z
 cd ~/.dotfiles/shell
 chmod +x z.sh
@@ -52,13 +48,14 @@ chmod +x z.sh
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Symlink vim prefs
-rm $HOME/.vimrc
+rm -rf $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell/.vimrc $HOME/.vimrc
-rm $HOME/.vim
+rm -rf $HOME/.vim
 ln -s $HOME/.dotfiles/shell/.vim $HOME/.vim
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
+cd ~/.dotfiles
 source .macos
 
 echo '++++++++++++++++++++++++++++++'

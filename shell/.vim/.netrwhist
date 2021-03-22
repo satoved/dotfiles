@@ -1,3 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/makedonsky/Library/Application Support/com.tinyapp.DBngin/Engines/mysql/5A110A95-F76C-4C75-AE9C-C69BB3D9DB53'
 let g:netrw_dirhist_1='/usr/local/etc/php/7.4'

@@ -21,7 +21,7 @@ sudo nvram SystemAudioVolume=" "
 #defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Menu bar: automatically hide and show
-defaults write NSGlobalDomain _HIHideMenuBar -bool true
+#defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2

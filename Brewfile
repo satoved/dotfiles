@@ -60,6 +60,7 @@ cask 'phpmon'
 cask 'caffeine'
 cask 'zoom'
 cask 'topnotch'
+cask 'purevpn'
 
 # Fonts
 cask 'font-lato'

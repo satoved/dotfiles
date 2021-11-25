@@ -59,6 +59,7 @@ cask 'vlc'
 cask 'phpmon'
 cask 'caffeine'
 cask 'zoom'
+cask 'topnotch'
 
 # Fonts
 cask 'font-lato'

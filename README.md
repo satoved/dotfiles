@@ -52,6 +52,7 @@ Your Mac is now ready to use!
 ## Additional Settings
 1. Remove Spotlight shortcuts in favour of Aldred
 2. Change language switching shortcut to Option + /
+3. Launchpad > System Preferences > Keyboard > Use F1, F2, etc. keys as standard function keys
 
 ## Your Own Dotfiles
 

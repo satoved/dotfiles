@@ -23,7 +23,7 @@ brew bundle
 pecl install imagick redis
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
+composer global require laravel/installer laravel/valet beyondcode/expose
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install

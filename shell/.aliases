@@ -29,7 +29,7 @@ alias seed="php artisan db:seed"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+# alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 alias phpunit="vendor/bin/phpunit"
 
 # PHP

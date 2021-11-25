@@ -44,6 +44,9 @@ git config --global core.excludesfile $HOME/.global-gitignore
 cd ~/.dotfiles/shell
 chmod +x z.sh
 
+# Install Zsh Autosuggestions plugin
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 

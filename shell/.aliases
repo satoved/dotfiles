@@ -23,6 +23,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 
 # Laravel
 alias a="php artisan"
+alias ar="php artisan remote"
 alias fresh="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
 

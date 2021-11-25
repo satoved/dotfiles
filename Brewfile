@@ -74,14 +74,6 @@ cask 'font-source-serif-pro'
 # Games
 cask 'the-battle-for-wesnoth'
 
-# Sign in to App Store
-if ! mas account >/dev/null; then
-    echo "Please open App Store and sign in using your Apple ID ...."
-    until mas account >/dev/null; do
-        sleep 5
-    done
-fi
-
 # Mac App Store
 mas 'Speedtest', id: 1153157709
 mas 'ColorSlurp', id: 1287239339

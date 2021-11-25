@@ -1,10 +1,5 @@
 # Oleg's Dotfiles
 
-This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
-
-📖 Read the blog post: https://driesvints.com/blog/getting-started-with-dotfiles  
-📺 Watch the screencast on Laracasts: https://laracasts.com/series/guest-spotlight/episodes/1
-
 ## A Fresh macOS Setup
 
 These instructions are for when you've already set up your dotfiles. If you want to get started with your own dotfiles you can [find instructions below](#your-own-dotfiles).
@@ -53,6 +48,12 @@ Your Mac is now ready to use!
 1. Remove Spotlight shortcuts in favour of Aldred
 2. Change language switching shortcut to Option + /
 3. Launchpad > System Preferences > Keyboard > Use F1, F2, etc. keys as standard function keys
+
+## Chrome Extensions
+- [LastPass](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
+- [Alpine.js devtools](https://chrome.google.com/webstore/detail/alpinejs-devtools/fopaemeedckajflibkpifppcankfmbhk)
+- [JSON formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)
+- [Yandex Access](https://chrome.google.com/webstore/detail/yandex-access/oakfpjifgmfpainopanfgfckhkcfgacb?hl=uk)
 
 ## Your Own Dotfiles
 

@@ -1,18 +1,30 @@
 #!/usr/bin/env bash
-echo 'start osx/set-defaults.sh'
+
+# Thanks to Mathias Bynens!
+# ~/.macos — https://mths.be/macos
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
 sudo -v
 
-# Disable unknown app protection
-spctl --master-disable
-
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Allow apps downloaded from Anywhere
+sudo spctl --master-disable
 
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
+
+# Set computer name (as done via System Preferences → Sharing)
+sudo scutil --set ComputerName "MacBook Oleg"
+sudo scutil --set HostName "MacBook Oleg"
+sudo scutil --set LocalHostName "MacBook Oleg"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook Oleg"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -21,7 +33,7 @@ sudo nvram SystemAudioVolume=" "
 #defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Menu bar: automatically hide and show
-#defaults write NSGlobalDomain _HIHideMenuBar -bool true
+defaults write NSGlobalDomain _HIHideMenuBar -bool false
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2

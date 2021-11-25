@@ -75,5 +75,4 @@ cask 'font-source-serif-pro'
 cask 'the-battle-for-wesnoth'
 
 # Mac App Store
-mas 'Speedtest', id: 1153157709
 mas 'ColorSlurp', id: 1287239339

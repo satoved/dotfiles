@@ -61,6 +61,7 @@ cask 'caffeine'
 cask 'zoom'
 cask 'topnotch'
 cask 'purevpn'
+case 'bartender'
 
 # Fonts
 cask 'font-lato'

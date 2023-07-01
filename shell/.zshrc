@@ -87,9 +87,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-
-export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

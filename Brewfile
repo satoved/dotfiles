@@ -1,23 +1,22 @@
 # Taps
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
-tap 'nicoverbruggen/homebrew-cask'
+tap 'stripe/stripe-cli'
 
 # Binaries
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'git'
-brew 'git-flow-avh'
-brew 'svn' # Needed to install fonts
 brew 'grep'
 brew 'mackup'
-brew 'hub'
+brew 'gh'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'zsh-autosuggestions'
+brew 'stripe/stripe-cli/stripe'
+brew 'stripe/stripe-mock/stripe-mock'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -27,41 +26,28 @@ brew 'svgo'
 brew 'gifsicle'
 
 # Development
-brew 'php'
-brew 'php@7.4'
-brew 'composer'
 brew 'imagemagick'
-brew 'mysql'
-brew 'nginx'
-brew 'node'
-brew 'redis'
 
 # Apps
 cask 'alfred'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'dbngin'
-cask 'github'
 cask 'google-drive'
-cask 'iterm2'
+cask 'warp'
 cask 'insomnia'
-cask 'keepassx'
+cask 'keepassxc'
 cask 'phpstorm'
-cask 'ray'
 cask 'sequel-ace'
-cask 'skype'
 cask 'telegram-desktop'
 cask 'the-unarchiver'
-cask 'tinkerwell'
 cask 'transmission'
-cask 'upwork'
 cask 'vlc'
-cask 'phpmon'
-cask 'caffeine'
 cask 'zoom'
 cask 'topnotch'
-cask 'purevpn'
-case 'bartender'
+cask 'bartender'
+cask 'herd'
+cask 'loom'
 
 # Fonts
 cask 'font-lato'
@@ -71,9 +57,7 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
-
-# Games
-cask 'the-battle-for-wesnoth'
+cask 'font-jetbrains-mono'
 
 # Mac App Store
 mas 'ColorSlurp', id: 1287239339

@@ -32,7 +32,6 @@ brew 'imagemagick'
 cask 'alfred'
 cask 'dropbox'
 cask 'google-chrome'
-cask 'dbngin'
 cask 'google-drive'
 cask 'warp'
 cask 'insomnia'
@@ -48,6 +47,10 @@ cask 'topnotch'
 cask 'bartender'
 cask 'herd'
 cask 'loom'
+
+# SOC 2 Compliance
+cask 'avast-security'
+cask 'drata-agent'
 
 # Fonts
 cask 'font-lato'

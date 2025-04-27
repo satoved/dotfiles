@@ -11,7 +11,7 @@ alias hostfile="sudo vim /etc/hosts"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
-alias sites="cd $HOME/Sites"
+alias sites="cd $HOME/Herd"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -42,6 +42,8 @@ alias watch="npm run watch"
 # Git
 alias nah='git reset --hard;git clean -df'
 alias gl="git log --oneline --decorate --color"
+alias gs="git status"
+alias commit="git add . && git commit -m"
 alias amend="git add . && git commit --amend --no-edit --no-verify"
 alias pull="git pull"
 alias push="git push"

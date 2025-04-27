@@ -3,7 +3,7 @@ alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias sshconfig="vi ~/.ssh/config"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
+alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 alias l="ls -laF"
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias c="clear"
@@ -22,14 +22,14 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Laravel
-alias a="php artisan"
-alias ar="php artisan remote"
-alias fresh="php artisan migrate:fresh --seed"
-alias seed="php artisan db:seed"
+alias a="herd php artisan"
+alias fresh="herd php artisan migrate:fresh --seed"
+alias seed="herd php artisan db:seed"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
-# alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+alias composer="herd composer"
+alias php="herd php"
 alias phpunit="vendor/bin/phpunit"
 
 # DBnging
@@ -37,7 +37,7 @@ alias phpunit="vendor/bin/phpunit"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
-alias watch="npm run watch"
+alias watch="npm run dev"
 
 # Git
 alias nah='git reset --hard;git clean -df'

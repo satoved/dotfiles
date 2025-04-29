@@ -15,7 +15,7 @@ If you're migrating from an existing Mac, you should first make sure to backup a
 - Did you save all of your work from apps which aren't synced through iCloud?
 - Did you remember to export important data from your local database?
 - Did you remember to backup ~/.ssh folder
-- Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
+- Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup --force && mackup uninstall --force` (see [issue](https://github.com/lra/mackup?tab=readme-ov-file#warning) since Sonoma)?
 
 ### Setting up your Mac
 
@@ -42,7 +42,7 @@ After backing up your old Mac you may now follow these install instructions to s
     ```
 
 6. Start `Herd.app` and run its install process
-7. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
+7. After mackup is synced with your cloud storage, restore preferences by running `mackup restore --force && mackup uninstall --force`
 8. Restart your computer to finalize the process
 
 Your Mac is now ready to use!

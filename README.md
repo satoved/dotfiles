@@ -24,7 +24,7 @@ After backing up your old Mac you may now follow these install instructions to s
 1. Update macOS to the latest version through system preferences
 2. Restore ~/.ssh folder from backup and add it to the keychain:
    - `eval "$(ssh-agent -s)"` to start the agent
-   - `ssh-add ~/.ssh/id_rsa`
+   - `ssh-add  --apple-use-keychain ~/.ssh/id_rsa`
    - enter key password if required
    - check that the key is added `ssh-add -l`
 3. Git usage might require devtools: `xcode-select --install`

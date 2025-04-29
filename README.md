@@ -22,23 +22,28 @@ If you're migrating from an existing Mac, you should first make sure to backup a
 After backing up your old Mac you may now follow these install instructions to setup a new one.
 
 1. Update macOS to the latest version through system preferences
-2. Restore ~/.ssh folder from backup
+2. Restore ~/.ssh folder from backup and add it to the keychain:
+   - `eval "$(ssh-agent -s)"` to start the agent
+   - `ssh-add ~/.ssh/id_rsa`
+   - enter key password if required
+   - check that the key is added `ssh-add -l`
+3. Git usage might require devtools: `xcode-select --install`
 
-3. Clone this repo to `~/.dotfiles` with:
+4. Clone this repo to `~/.dotfiles` with:
 
     ```zsh
     git clone --recursive git@github.com:satoved/dotfiles.git ~/.dotfiles
     ```
 
-4. Run the installation with:
+5. Run the installation with:
 
     ```zsh
     cd ~/.dotfiles && ./fresh.sh
     ```
 
-5. Start `Herd.app` and run its install process
-6. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
-7. Restart your computer to finalize the process
+6. Start `Herd.app` and run its install process
+7. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
+8. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
 

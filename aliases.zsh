@@ -49,3 +49,17 @@ alias pull="git pull"
 alias push="git push"
 alias stash="git stash -u"
 alias wip="git add . && git commit -m 'wip' --no-verify"
+
+#  Commit everything
+function commit() {
+  commitMessage="$*"
+
+  git add .
+
+  if [ "$commitMessage" = "" ]; then
+     aicommits
+     return
+  fi
+
+  eval "git commit -a -m '${commitMessage}'"
+}

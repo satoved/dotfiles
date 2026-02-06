@@ -42,24 +42,8 @@ alias watch="npm run dev"
 # Git
 alias nah='git reset --hard;git clean -df'
 alias gl="git log --oneline --decorate --color"
-alias gs="git status"
-alias commit="git add . && git commit -m"
 alias amend="git add . && git commit --amend --no-edit --no-verify"
 alias pull="git pull"
 alias push="git push"
 alias stash="git stash -u"
 alias wip="git add . && git commit -m 'wip' --no-verify"
-
-#  Commit everything
-function commit() {
-  commitMessage="$*"
-
-  git add .
-
-  if [ "$commitMessage" = "" ]; then
-     aicommits
-     return
-  fi
-
-  eval "git commit -a -m '${commitMessage}'"
-}

@@ -23,7 +23,6 @@
 # Logs and databases #
 ######################
 *.log
-*.sql
 *.sqlite
 
 # OS generated files #
@@ -47,3 +46,9 @@ yarn-error.log
 
 # PHPUnit #
 .phpunit.cache
+
+# Laravel Tinker #
+.tinker
+
+# Claude #
+.claude/settings.local.json
